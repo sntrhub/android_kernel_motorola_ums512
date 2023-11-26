@@ -423,6 +423,8 @@ KBUILD_CFLAGS   := -Wall -Werror -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -Wno-format-security \
 		   -std=gnu89
 		   
+JOURNEY_BUILD_SCRIPT = yes
+
 ifeq ($(JOURNEY_BUILD_SCRIPT),yes)
 KBUILD_CFLAGS += -DJOURNEY_FEATURE_SYSTEM_ENHANCED
 $(warning KBUILD_CFLAGS $(KBUILD_CFLAGS))
